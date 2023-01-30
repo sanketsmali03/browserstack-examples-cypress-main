@@ -1,0 +1,12 @@
+# Setting additional local flags
+
+# force-local: This flag ensures that, regardless of any other setting, none of the assets are resolved via the public internet and any resolution of URLs that your BrowserStack device does is routed through the Local tunnel. This flag is typically used to ensure compliance with your network policies. 
+--force-local
+
+# verbose: This option sets the level of logging required. Set 1 to debug issues related to setting up connections. Set 2 for logs related to network information. Set 3 to forward all communication to local servers for each request and response. The default value for this option is 1.
+--verbose 4
+
+# local-identifier: If you are running multiple instances of BrowserStackLocal binary (for better performance or other reasons),  specify unique strings for each instance such that BrowserStack  uniquely identifies them. Ensure that you specify the same string in Automate tests as well.
+--local-identifier "Test123"
+
+
